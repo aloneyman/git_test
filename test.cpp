@@ -1,7 +1,9 @@
 #include<iostream>
+#include "people.h"
 using namespace std;
 int main(){
-    cout << "hello yyy" << endl;
-    cout << "chh " << endl;
+    shared_ptr<people> t("chh",18);
+    cout << t.get()->getAge() << endl;
+    cout << t.get()->getName() << endl;
     return 0;
 }
